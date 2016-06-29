@@ -1,0 +1,7 @@
+/**
+Workaround to provide easy all-in-one imports of Bourbon features and the Neat grid for .vue component stylesheets.
+Import this file to gain these features.
+ **/
+
+@import '../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import '../node_modules/bourbon-neat/app/assets/stylesheets/neat';

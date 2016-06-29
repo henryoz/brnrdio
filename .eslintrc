@@ -1,0 +1,16 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "html"
+  ],
+  "extends": [
+    "airbnb-base/legacy"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
