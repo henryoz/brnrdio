@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import App from './App.vue';
 import Home from './components/Home/Home.vue';
 import Vote from  './components/Vote/Vote.vue';
 import Bernard from './components/Bernard/Bernard.vue';
