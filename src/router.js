@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import App from './App.vue';
+import Home from './components/Home/Home.vue';
 import Vote from  './components/Vote/Vote.vue';
 import Bernard from './components/Bernard/Bernard.vue';
 import fourOhFour from './components/FourOhFour/FourOhFour.vue';
@@ -13,7 +14,7 @@ const router = new VueRouter();
 // Specify new routes
 router.map({
   '/': {
-    component: App,
+    component: Home,
     name: 'home'
   },
   '/vote': {
