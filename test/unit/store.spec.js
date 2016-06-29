@@ -4,8 +4,10 @@ import { mutations } from '../../src/vuex/store';
 
 const { GET_BERNARDS } = mutations;
 
-describe('State Store', () => {
+describe('State', () => {
+
   it('should build an array of Bernard Hills based on the results passed to it', () => {
+
     const state = {
       bernards: [],
       votePair: [],
@@ -18,7 +20,7 @@ describe('State Store', () => {
       {name: 'bernard3', contentUrl: 'imageurl.com/3' },
       {name: 'bernard4', contentUrl: 'imageurl.com/4' },
       {name: 'bernard5', contentUrl: 'imageurl.com/5' }
-    ]
+    ];
 
     GET_BERNARDS(state, results);
 
