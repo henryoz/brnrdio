@@ -3,11 +3,14 @@
 <style lang='scss' src='./App.scss'></style>
 
 <script>
-  import Hello from './components/Hello.vue';
-
+  import Home from './components/Home/Home.vue';
+  import BestBernard from './components/BestBernard/BestBernard.vue';
+  import store from './vuex/store';
   export default {
     components: {
-      Hello
-    }
+      Home,
+      BestBernard
+    },
+    store
   };
 </script>
