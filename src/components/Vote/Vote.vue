@@ -36,21 +36,23 @@
         },
         methods: {
             initGetBernards() {
-                this.$http.post(
-                    'https://api.cognitive.microsoft.com/bing/v5.0/images/search?q=bernard hill',
-                    function(data) {
-                        this.$set('retrievedBernards', data.value);
-                    },
-                    {
-                        headers: {
-                            "Content-Type": "multipart/form-data",
-                            "Ocp-Apim-Subscription-Key": "c82da6d6251a42a299d713be34a943aa"
+                if (this.bernards.length == 0) {
+                    this.$http.post(
+                        'https://api.cognitive.microsoft.com/bing/v5.0/images/search?q=bernard hill',
+                        function(data) {
+                            this.$set('retrievedBernards', data.value);
+                        },
+                        {
+                            headers: {
+                                "Content-Type": "multipart/form-data",
+                                "Ocp-Apim-Subscription-Key": "c82da6d6251a42a299d713be34a943aa"
+                            }
                         }
-                    }
-                ).then(function() {
-                    this.getBernards(this.retrievedBernards);
-                    this.getRandomPair();
-                });
+                    ).then(function() {
+                        this.getBernards(this.retrievedBernards);
+                        this.getRandomPair();
+                    });
+                }
             }
         }
     }
