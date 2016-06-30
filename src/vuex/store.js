@@ -17,6 +17,8 @@ export const mutations = {
 
   GET_BERNARDS(state, results) {
     state.bernards = state.bernards.concat(results);
+
+    return state;
   },
 
   GET_RANDOM_PAIR(state) {
@@ -34,6 +36,8 @@ export const mutations = {
       [val1, val2] = getPair(max);
     }
     state.votePair = [state.bernards[val1], state.bernards[val2]];
+
+    return state;
   },
 
   VOTE_BERNARD(state, bernard) {
@@ -42,6 +46,8 @@ export const mutations = {
     } else {
       bernard.votes = 1;
     }
+
+    return state;
   },
 
   // WIPE_BERNARDS(state) {
@@ -59,6 +65,7 @@ export const mutations = {
       return b.votes - a.votes;
     });
     state.bestBernard = state.bernards[0];
+    return state;
   }
 };
 
