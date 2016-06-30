@@ -12,7 +12,12 @@
     }
 
     img {
-        height: 200px;
+
+        height: 350px;
+    }
+
+    img:hover {
+        border: deeppink solid 5px;
     }
 
 </style>

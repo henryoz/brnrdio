@@ -1,9 +1,21 @@
 <template>
-    <div>
-        <h3>BESTEST BERNARD HILL</h3>
-        <img v-bind:src="bestBernard.contentUrl">
+    <div class="row">
+        <div class="col-xs-12">
+        <h3 class="center"><span class="glyphicon glyphicon-heart"></span> BESTEST BERNARD HILL <span class="glyphicon glyphicon-heart"></span></h3>
+        <img class="center-block" v-bind:src="bestBernard.contentUrl">
+        </div>
     </div>
 </template>
+
+<style>
+    .center {
+        text-align: center;
+    }
+
+    .glyphicon-heart {
+        color: hotpink;
+    }
+</style>
 
 <script>
 

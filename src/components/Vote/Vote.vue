@@ -1,7 +1,7 @@
 <template>
     <vote>
-    <h3>VOTE PAGE</h3>
-        <div v-if="votePair.length > 1">
+    <h3 class="center">PLACE YOUR VOTE NOW <span class="glyphicon glyphicon-pencil"></span></h3>
+        <div class="center" v-if="votePair.length > 1">
                 <bernard v-for="vote in votePair" :bernard="vote"></bernard>
         </div>
     </vote>
